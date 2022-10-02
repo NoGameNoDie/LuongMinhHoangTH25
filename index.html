@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--1.h1-h6 - heading
+    2.p - paragraph
+    3.img
+    4.a - anchor
+    5.ul,li - unordered list, list item
+    6.table
+    7.input
+    8.button
+    9.div
+ -->
+<html>
+    <!-- Phần đầu -->
+    <head>
+        <title>Trang Anime Hay Ho</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <style>
+        h1:hover{
+            color:blue;
+        }
+        .nav-item:hover{
+        color: rgb(237, 55, 55);
+        
+        }
+        .content-list:hover{
+            color: black;
+        }
+
+    </style>
+    
+    </head>
+    <!-- Phần thân -->
+    
+    <body background="https://nhathauxaydung24h.com/wp-content/uploads/2021/05/background-den-1.jpg" style="background-repeat:No-repeat max-height=1000%" onload="myF()">
+        <script type="text/javascript">
+    function hide_float_left() {
+        var content = document.getElementById('float_content_left');
+        var hide = document.getElementById('hide_float_left');
+        if (content.style.display == "none")
+        {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_left()"> Tắt quảng cáo (X)</a>'; }
+            else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_left()">Anime đáng xem nhất</a>';
+        }
+        }
+        function myF(){
+          onl.style.display = "block";
+          
+        }
+        function un(){
+            onl.style.display = "none";
+        }
+    </script>
+    
+        <div class="float-ck" style="left: 14px">
+    <div id="hide_float_left">
+    <a href="javascript:hide_float_left()">(X)</a></div>
+    <div id="float_content_left">
+    <!-- Start quang cao-->
+    <img src="https://anime.bet/wp-content/uploads/2022/06/danmachi-ss4-ham-nguc-toi-phan-4-250x350.jpg.webp" width="150px" height="600px" style="padding-bottom: 50%" >
+    <!-- End quang cao -->
+    </div>
+    </div>
+    <!-- QUẢNG CÁO GIỮA -->
+        <div id="onl" style="position: fixed; bottom: 120px; top: 140px; left: 500px; z-index: 100; display: block;">
+            <div style=" width:500px; height:500px;">
+                <a href="javascript:un()" style="color:#F00;"> (X)</a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJvtu338MoXBD6290JXTJD4mmPO7Q8Kt4UQ&usqp=CAU" width="500px" height="500px">
+            </div>
+        </div>
+    <!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+    <button class="open-button" onclick="openForm()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf87nLBEx0TXZviVpqM9Ak6cvQXdAv9GAgbQ&usqp=CAU" width="60px" height="60px" style="border-radius:50%;margin-bottom: 20px;" ></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Bạn cần gì ?</h2>
+
+    <label for="msg"><b>Mời bạn nhập tài khoản ngân hàng</b></label>
+    <textarea placeholder="Viết vào đây" name="msg" required></textarea>
+
+    <button type="submit" class="btn gui">Gửi</button>
+    <button type="close" class="btn cancel" onclick="closeForm()">Đóng</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+        <div id="mySlidenavv" class="slidenavv">        
+            <a href="https://www.facebook.com/" id="facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXqKqFBKDi4JgkPxVHzYqfdfqxpIbpige6Sg&usqp=CAU" style="width:60px ; height: 50px; border-radius: 10px;"></a>
+            <a href="https://www.zalo.me/" id="zalo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVVGf26aal47HB0fXFa-QEuAA8Hz0kdBofuyXnOQItasQwUdoMh-fy7sCA2GgcS92HmXw&usqp=CAU" style="width:60px ; height: 50px; border-radius: 10px;"></a>
+            <a href="https://mail.google.com/" id="gmail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKphsGOIpki9yuUiSgrLvtStV-6JG3HmyLEAtHeDYfKNuHLxfNK0oYqkkzXsEPBo7teM&usqp=CAU" style="width:60px ; height: 50px; border-radius: 10px;"></a>
+            <a href="https://discord.com/" id="discord"><img src="https://seeklogo.com/images/D/discord-icon-new-2021-logo-09772BF096-seeklogo.com.png" style="width:60px ; height: 50px; border-radius: 10px;"></a>
+        </div>
+        <!-- navbar -->
+
+        <div class="nav">
+            <div class="nav-trai">
+                <ul class="nav-item-gt">Giới thiệu</ul>
+                <ul class="nav-item-tt">Thông tin</ul>
+                <ul class="nav-item-danhsach">Danh sách Anime
+                    <div class="Danhsach-content">
+                        <li class="content-list">
+                            Anime Học Đường  
+                        </li>
+                        <li class="content-list">
+                            Anime Chuyển Sinh
+                        </li>
+                        <li class="content-list">
+                            Anime Giấu Nghề
+                        </li>
+                        <li class="content-list">
+                            Anime Tình Cảm
+                        </li>
+                        <li class="content-list">
+                            Anime Chiếu Rạp
+                        </li>
+                        <li class="content-list">
+                            Anime Tàu
+                        </li>
+                    </div>
+                </ul>
+                <ul class="nav-item-tai">Tải ứng dụng</ul>
+                <ul class ="nav-item-menu-icon " ><i class="fa-solid fa-ellipsis"></i></ul>
+            </div>
+
+            <div class="nav-phai">
+                <ul class="nav-item-dangnhap">Đăng Nhập</ul>
+                <ul class="nav-item-dangky">Đăng Ký</ul>
+            </div>
+        </div>
+        
+
+        <div id="logo">
+            <img src="https://pbs.twimg.com/profile_images/818033542798065664/Uq1HVfl9_400x400.jpg"; width="150px"; height="150px"; style= "margin-top: 31px" >
+        </div>
+        
+        <!-- <div class="Slideshow container"> -->
+        <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="jssor.js"></script>
+    <script type="text/javascript" src="jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 1200, $Opacity: 5 }
+            ];
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 3000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1000));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 150px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 3800px; height: 1000px; overflow: hidden;">
+            <div>
+                <img u="image" src="https://cdn.zenquiz.net/external/2019/10/17/15/682c6590-f0f3-11e9-918d-050901070303-compressed.jpg" style="width: 100%;height: 100%;" />
+            </div>
+            <div>
+                <img u="image" src="https://wallpaperaccess.com/full/5103.jpg" style="width: 100%;height: 100%;" />
+            </div>
+            <div>
+                <img u="image" src="https://haycafe.vn/wp-content/uploads/2021/11/anh-bia-anime-chat-an-tuong.jpg" style="width: 100%;height: 100%;" />
+            </div>
+            <div>
+                <img u="image" src="https://bloganchoi.com/wp-content/uploads/2021/01/top-anime-hay-nhat.jpg" style="width: 100%;height: 100%;" />
+            </div>
+            <div>
+                <img u="image" src="https://www.nguyenkim.com/images/detailed/744/top-nhung-phim-anime-hay-nhat-moi-thoi-dai.jpg" style="width: 100%;height: 100%;" />
+            </div>
+            <div>
+                <img u="image" src="https://genk.mediacdn.vn/2019/12/17/anh-7-15765912140321595873896.png" style="width: 100%;height: 100%;" />
+            </div>
+            <div>
+                <img u="image" src="https://cdn.tgdd.vn//GameApp/1349601//top-15-phim-anime-dai-tap-hay-nhat-moi-thoi-dai-nen-xem-288-800x450.jpg" style="width: 100%;height: 100%;" />
+            </div>
+            
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <style>
+            /* jssor slider bullet navigator skin 05 css */
+            /*
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+            */
+            .jssorb05 {
+                position: absolute;
+            }
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url(img/b05.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb05 div { background-position: -7px -7px; }
+            .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+            .jssorb05 .av { background-position: -67px -7px; }
+            .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <style>
+            /* jssor slider arrow navigator skin 12 css */
+            /*
+            .jssora12l                  (normal)
+            .jssora12r                  (normal)
+            .jssora12l:hover            (normal mouseover)
+            .jssora12r:hover            (normal mouseover)
+            .jssora12l.jssora12ldn      (mousedown)
+            .jssora12r.jssora12rdn      (mousedown)
+            */
+            .jssora12l, .jssora12r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 30px;
+                height: 46px;
+                cursor: pointer;
+                background: url(img/a12.png) no-repeat;
+                overflow: hidden;
+            }
+            .jssora12l { background-position: -16px -37px; }
+            .jssora12r { background-position: -75px -37px; }
+            .jssora12l:hover { background-position: -136px -37px; }
+            .jssora12r:hover { background-position: -195px -37px; }
+            .jssora12l.jssora12ldn { background-position: -256px -37px; }
+            .jssora12r.jssora12rdn { background-position: -315px -37px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora12l" style="top: 123px; left: 0px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora12r" style="top: 123px; right: 0px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+    </div>
+</div>
+    <!-- Jssor Slider End -->
+        
+        <div>
+        <h1 title="Trang Web xem Anime hay ho ">Mang giấc mơ trở thành Vua Hải Tặc của Làng Lá</h1>
+        <div class="box-search close">
+            <div class="search none-margin">
+                <input type="text" class="search-input" placeholder="Tìm Kiếm ">
+                <button class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+       <button class="btn1" style="background-color:rgb(65, 50, 230); width: 100px; height: 50px;border-radius: 50%;">Anime Chiếu Rạp</button>
+       <button class="btn1" style="background-color:rgb(241, 229, 59); width: 100px; height: 50px;border-radius: 50%;">Anime Trung Quốc</button>
+       <button class="btn1" style="background-color:rgb(113, 227, 126); width: 100px; height: 50px;border-radius: 50%;">Anime Học Đường</button>
+       <button class="btn1" style="background-color:rgb(242, 95, 195); width: 100px; height: 50px;border-radius: 50%;">Anime Chuyển Sinh</button>
+       <button class="btn1" style="background-color:rgb(236, 91, 91); width: 100px; height: 50px;border-radius: 50%;">Anime Giấu Nghề</button>
+       <button class="btn1" style="background-color:rgb(109, 177, 233); width: 100px; height: 50px;border-radius: 50%;">Anime TÌnh Cảm</button>
+    
+       <!-- Column layout -->
+    <div class="column-layout">
+        <div class="column-item sidebar-one">
+        <h2>Giới thiệu</h2>
+       <p><b>Web xem anime online trực tuyến từ lâu đã được các bạn trẻ lựa chọn là nơi xem phim vào dịp cuối tuần. Các web anime hầu hết đều miễn phí nên tạo được sự thuận tiện cho người xem. Chúng tôi thường xuyên cập nhập các trang bộ anmie full hd chất lượng cao mới vào web. Đem đến cho bạn đọc sự lựa chọn tốt nhất để xem các bộ anime tình cảm, anime chiếu rạp, anime mới…</b>.</p>
+        </div>
+        <div class="column-item sidebar-one">
+        <h3>Bổ sung kiến thức</h3>
+        <p><b>Weeaboo Wibu là gì?
+        Trước khi tìm hiểu về Wibu là gì chúng ta cần phải hiểu từ “Weeaboo là gì”
+        Từ Weeaboo là từ để chỉ những người yêu, đam mê thậm chí bị ám ảnh bởi những tác phẩm 2D của Nhật Bản như là Anime – Light Novel – Manga…Chính vì ám ảnh nên những người này thường hành động để cố gắng giống hay thậm chí là muốn trở thành người Nhật những nhân vật đó nhưng tất nhiên họ không thể trở thành như vậy được</b>.</p>
+        </div>
+    </div> 
+       <a href="https://vip88vn.com/">Tới trang tăng thu nhập</a>
+    <div id="demo" style="width:100%">
+        <marquee behavior="scroll" directions="left" class="list-danhsach">
+            <img src="https://genk.mediacdn.vn/2020/1/6/photo-1-15782483639772085341125.jpg" width="155px" height="180px">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-nen-Dragon-Ball-dep-nhat.jpg" width="155px" height="180px">
+            <img src="https://recmiennam.com/wp-content/uploads/2018/04/anh-sword-art-online-1.jpg" width="155px" height="180px">
+            <img src="https://cdn.tgdd.vn/Files/2020/01/09/1230821/top-10-bo-phim-anime-hay-nhat-moi-thoi-dai-cua-nhat-ban-la-ai-cung-nen-xem-qua-7.jpg" width="155px" height="180px">
+            <img src="https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/review/phim/tokyo-revengers-2021.jpg" width="155px" height="180px">
+            <img src="https://cdn.trangcongnghe.vn/uploads/posts/2016-09/nhung-bo-anime-cuc-hot-gay-anh-huong-lon-den-nen-van-hoa-nhat-ban_1.jpeg" width="155px" height="180px">
+            <img src="https://canhrau.com/wp-content/uploads/2021/03/nhung-bo-anime-hay-nhat-moi-thoi-dai-hinh-15.png" width="155px" height="180px">
+            <img src="https://giaitri.vn/wp-content/uploads/2021/05/25.5.jpg" width="155px" height="180px">
+            <img src="https://thanhtoanhoadon365.com/wp-content/uploads/2020/10/phim-hoat-hinh-anime-hay-nhat.jpg" width="155px" height="180px">
+            <img src="https://bloganchoi.com/wp-content/uploads/2021/01/anime-vua-dau-bep-soma.jpeg" width="155px" height="180px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dsJoVKn06AbrCbvQWYcUC1-Xw3HNDlFBMg&usqp=CAU" width="155px" height="180px">
+        </marquee>
+    </div>
+    <div class="card">
+        <div class="card-box">
+        <a href="chitiet.html" ><img src="https://genk.mediacdn.vn/2020/1/6/photo-1-15782483639772085341125.jpg" alt="Avatar" style="width:155px ; height: 180px"></a>
+        <div class="card-phim">
+          <h4><b>Kimetsu no Yaiba</b></h4> 
+          <p>24 tập</p> 
+          <a href="chitiet.html"><button>Xem Phim</button></a>
+        </div>
+        </div>
+        <div class="card-box">
+        <a href="chitietdrgball.html" ><img src="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-nen-Dragon-Ball-dep-nhat.jpg" alt="Avatar" style="width:155px ; height: 180px"></a>
+        <div class="card-phim">
+          <h4><b>Dragon Ball Z</b></h4> 
+          <p>240 tập</p> 
+          <a href="chitietdrgball.html" ><button>Xem Phim</button></a>
+        </div>
+        </div>
+        <div class="card-box">
+         <a href="SAO.html" ><img src="https://recmiennam.com/wp-content/uploads/2018/04/anh-sword-art-online-1.jpg" alt="Avatar" style="width:155px ; height: 180px"></a>
+        <div class="card-phim">
+          <h4><b>Sword Art Online</b></h4> 
+          <p>24 tập</p> 
+          <a href="SAO.html" ><button>Xem Phim</button></a>
+        </div>
+        </div>
+        <div class="card-box">
+            <a href="FT.html" ><img src="https://cdn.tgdd.vn/Files/2020/01/09/1230821/top-10-bo-phim-anime-hay-nhat-moi-thoi-dai-cua-nhat-ban-la-ai-cung-nen-xem-qua-7.jpg" alt="Avatar" style="width:155px ; height: 180px"></a>
+        <div class="card-phim">
+          <h4><b>Fairy Tail</b></h4> 
+          <p>24 tập</p> 
+          <a href="FT.html" ><button>Xem Phim</button></a>
+        </div>
+        </div>
+        <div class="card-box">
+            <a href="TKO.html" ><img src="https://cdn.nguyenkimmall.com/images/companies/_1/tin-tuc/review/phim/tokyo-revengers-2021.jpg" alt="Avatar" style="width:155px ; height: 180px"></a>
+        <div class="card-phim">
+          <h4><b>Tokyo Revenger</b></h4> 
+          <p>50 tập</p> 
+          <a href="TKO.html" ><button>Xem Phim</button></a>
+        </div>
+        </div>
+        <div class="card-box">
+            <a href="DN.html" ><img src="https://cdn.trangcongnghe.vn/uploads/posts/2016-09/nhung-bo-anime-cuc-hot-gay-anh-huong-lon-den-nen-van-hoa-nhat-ban_1.jpeg" alt="Avatar" style="width:155px ; height: 180px"></a>
+        <div class="card-phim">
+          <h4><b>Death Note</b></h4> 
+          <p>24 tập</p> 
+          <a href="DN.html"><button>Xem Phim</button></a>
+        </div>
+        </div>
+        <div class="card-box">
+            <a href="OPM.html" ><img src="https://canhrau.com/wp-content/uploads/2021/03/nhung-bo-anime-hay-nhat-moi-thoi-dai-hinh-15.png" alt="Avatar" style="width:155px ; height: 180px"></a>
+            <div class="card-phim">
+              <h4><b>One Punch Man</b></h4> 
+              <p>48 tập</p> 
+              <a href="OPM.html"><button>Xem Phim</button></a>
+            </div>
+            </div>
+            <div class="card-box">
+                <a href="OP.html"><img src="https://giaitri.vn/wp-content/uploads/2021/05/25.5.jpg" alt="Avatar" style="width:155px ; height: 180px"></a>
+                <div class="card-phim">
+                  <h4><b>One Piece</b></h4> 
+                  <p>1026 tập</p> 
+                  <a href="OP.html"><button>Xem Phim</button></a>
+                </div>
+                </div>
+                <div class="card-box">
+                    <a href="Naruto.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dsJoVKn06AbrCbvQWYcUC1-Xw3HNDlFBMg&usqp=CAU" alt="Avatar" style="width:155px ; height: 180px"></a>
+                    <div class="card-phim">
+                      <h4><b>Naruto</b></h4> 
+                      <p>500 tập</p> 
+                      <a href="Naruto.html"><button>Xem Phim</button></a>
+                    </div>
+                    </div>
+
+    </body>
+</html>
